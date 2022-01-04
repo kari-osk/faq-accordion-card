@@ -166,8 +166,8 @@ main {
 
   .img-box {
     position: absolute;
-    top: 330px;
-    left: 450px;
+    top: 205px;
+    left: -102px;
     z-index: 100;
   }
 
