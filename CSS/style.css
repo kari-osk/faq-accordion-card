@@ -96,7 +96,10 @@ main {
 }
 
 @media (max-width: 640px) {
-  .img-desktop {
+  .img-desktop-woman {
+    display: none;
+  }
+  .img-bg-desktop {
     display: none;
   }
 }
@@ -104,9 +107,11 @@ main {
 @media (min-width: 640px) {
   main {
     width: 923px;
+    min-height: 512px;
     height: fit-content;
     display: flex;
     flex-direction: row;
+    position: relative;
     margin: 130px auto 70px;
     border: none;
     box-shadow: 7px 10px 28px -8px rgba(0, 0, 0, 0.75);
@@ -120,11 +125,27 @@ main {
   .img-mobile {
     display: none;
   }
-  .img-desktop {
-    width: 459px;
-    max-height: 360px;
-    margin-top: 5%;
-    margin-left: -7%;
+  .desktop-images::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+
+  .img-desktop-woman {
+    width: 466px;
+    max-height: 363px;
+    float: left;
+    position: relative;
+    margin-top: 12%;
+    margin-left: -15%;
+    z-index: 1;
+  }
+
+  .img-bg-desktop {
+    width: 600px;
+    float: left;
+    position: absolute;
+    margin-left: -65%;
   }
 
   .faq-section {
