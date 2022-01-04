@@ -26,7 +26,7 @@
 }
 
 body {
-  height: fit-content;
+  min-height: 100vh;
   background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,15 +144,15 @@ main {
   .img-mobile {
     display: none;
   }
-  .desktop-images {
+  /* .desktop-images {
     overflow: hidden;
-  }
+  } */
 
-  .desktop-images::after {
+  /* .desktop-images::after {
     content: ' ';
     display: table;
     clear: both;
-  }
+  } */
 
   .img-desktop-woman {
     width: 466px;
@@ -167,9 +167,10 @@ main {
   .img-box {
     position: absolute;
     top: 330px;
-    left: 200px;
-    z-index: 10;
+    left: 450px;
+    z-index: 100;
   }
+
   .img-bg-desktop {
     width: 800px;
     float: left;
@@ -179,7 +180,7 @@ main {
   }
 
   .faq-section {
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 10px;
     justify-content: center;
