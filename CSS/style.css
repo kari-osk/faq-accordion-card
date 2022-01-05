@@ -144,15 +144,6 @@ main {
   .img-mobile {
     display: none;
   }
-  /* .desktop-images {
-    overflow: hidden;
-  } */
-
-  /* .desktop-images::after {
-    content: ' ';
-    display: table;
-    clear: both;
-  } */
 
   .img-desktop-woman {
     width: 466px;
